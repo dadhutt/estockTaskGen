@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="435.0" prefWidth="514.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.estock.eStockController">
+   <children>
+      <TextField fx:id="EMAILS" layoutX="51.0" layoutY="50.0" prefHeight="25.0" prefWidth="413.0" promptText="Enter account emails, seperated by commas (ie one@gmail.com,two@gmail.com)" />
+      <TextField fx:id="ASINS" layoutX="51.0" layoutY="90.0" prefHeight="25.0" prefWidth="413.0" promptText="Enter ASIN(s), seperated by commas (ie B081111,B082222)" />
+      <CheckBox fx:id="NORMAL_CHECK" layoutX="51.0" layoutY="186.0" mnemonicParsing="false" text="1 Normal Task/ASIN/Account" />
+      <TextField fx:id="PROXIES" layoutX="281.0" layoutY="182.0" prefHeight="25.0" prefWidth="182.0" promptText="Proxies (Separate names w/ comma)" />
+      <TextField fx:id="QUANTITY" layoutX="281.0" layoutY="258.0" prefHeight="25.0" prefWidth="80.0" promptText="Quantity" />
+      <TextField fx:id="PRICE_CHECK" layoutX="281.0" layoutY="220.0" prefHeight="25.0" prefWidth="80.0" promptText="Price Check" />
+      <Label fx:id="TASK_COUNT" layoutX="51.0" layoutY="314.0" prefHeight="21.0" prefWidth="182.0" text="Tasks Created: 0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="TOTAL_COUNT" layoutX="51.0" layoutY="354.0" prefHeight="21.0" prefWidth="182.0" text="Total Tasks: 0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="TASK_BUTTON" layoutX="281.0" layoutY="312.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="182.0" text="Add Tasks" />
+      <Button fx:id="JSON_BUTTON" layoutX="281.0" layoutY="352.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="182.0" text="Create tasks.json" />
+      <Label fx:id="STATUS" alignment="CENTER" contentDisplay="CENTER" layoutX="51.0" layoutY="14.0" prefHeight="17.0" prefWidth="413.0" text="Hydration's Task Creator" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="ENDLESS" layoutX="51.0" layoutY="212.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="182.0" text="Endless Tasks" />
+      <CheckBox fx:id="THIRD" layoutX="51.0" layoutY="237.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="182.0" text="Allow Third Party Sellers" />
+      <CheckBox fx:id="NEW" layoutX="51.0" layoutY="262.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="182.0" text="Only New Items" />
+      <TextField fx:id="TASK_NUM" layoutX="384.0" layoutY="258.0" prefHeight="25.0" prefWidth="80.0" promptText="# of Tasks" />
+      <Hyperlink fx:id="HYPERLINK" layoutX="328.0" layoutY="158.0" text="ASIN Spreadsheat">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Hyperlink>
+      <TextField fx:id="DELAY" layoutX="384.0" layoutY="220.0" prefHeight="25.0" prefWidth="80.0" promptText="Delay" />
+      <Button fx:id="RESET" layoutX="281.0" layoutY="392.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="182.0" text="Reset Tasks" />
+      <ComboBox fx:id="PRESET" layoutX="166.0" layoutY="130.0" prefHeight="25.0" prefWidth="103.0" promptText="Presets" />
+      <TextField fx:id="OFFERID" disable="true" layoutX="282.0" layoutY="130.0" prefHeight="25.0" prefWidth="182.0" promptText="OfferID" />
+      <ComboBox fx:id="MODE" layoutX="51.0" layoutY="130.0" prefHeight="25.0" prefWidth="103.0" promptText="Mode" />
+      <Label fx:id="MODE_COUNT" layoutX="51.0" layoutY="394.0" prefHeight="21.0" prefWidth="182.0" text="SS: 0 / ASIN: 0 / OfferID: 0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
